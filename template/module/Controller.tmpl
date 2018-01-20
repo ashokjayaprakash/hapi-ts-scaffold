@@ -1,0 +1,38 @@
+"use strict";
+
+import * as Hapi from "hapi";
+
+export class  <%= className %> {
+
+    public get<%= functionName %> = async (request: Hapi.Request, reply: Hapi.ReplyWithContinue) => {
+        try {
+            reply("Created Successfuly").code(200);
+        } catch (error) {
+            reply("Server Error").code(500);
+        }
+    }
+
+    public create<%= functionName %> = async (request: Hapi.Request, reply: Hapi.ReplyWithContinue) => {
+        try {
+            reply("Created Successfuly").code(200);
+        } catch (error) {
+            reply("Server Error").code(500);
+        }
+    }
+
+    public update<%= functionName %> = async (request: Hapi.Request, reply: Hapi.ReplyWithContinue) => {
+        try {
+            reply("Created Successfuly").code(200);
+        } catch (error) {
+            reply("Server Error").code(500);
+        }
+    }
+
+    public delete<%= functionName %> = async (request: Hapi.Request, reply: Hapi.ReplyWithContinue) => {
+        try {
+            reply("Created Successfuly").code(200);
+        } catch (error) {
+            reply("Server Error").code(500);
+        }
+    }
+}

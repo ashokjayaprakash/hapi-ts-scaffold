@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"moduleResolution": "node",
+        "noEmitOnError": true,
+        "baseUrl": ".",
+		"inlineSourceMap": true,
+		"inlineSources": false,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": false,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"strictNullChecks": false,
+		"newLine": "LF",
+		"outDir": "build"
+	},
+	"include": [
+		"app/**/**.ts",
+		"!./node_modules/**/*.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"typings"
+	],
+	"files": [
+		"./app/src/config.ts"]
+}

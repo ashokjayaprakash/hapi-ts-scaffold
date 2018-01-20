@@ -1,0 +1,57 @@
+import * as Hapi from "hapi";
+import {<%= controller.className %>} from "./<%= controller.moduleName %>";
+
+exports.register = (server: Hapi.Server, options, cont) => {
+
+    const <%= controller.name %>: <%= controller.className %> = new <%= controller.className %>();
+
+    server.route([
+        {
+            method: "POST",
+            path: "/<%= name %>",
+            config: {
+                tags: ["<%= name %>"],
+                description: "Create <%= name %>",
+                notes: "Get <%= name %> id",
+                handler: <%= controller.name %>.create<%= controller.functionName %>,
+            }
+        },
+        {
+            method: "GET",
+            path: "/<%= name %>",
+            config: {
+                tags: ["<%= name %>"],
+                description: "Get <%= name %> by id",
+                notes: "Get <%= name %> id",
+                handler: <%= controller.name %>.get<%= controller.functionName %>,
+            }
+        },
+        {
+            method: "PUT",
+            path: "/<%= name %>",
+            config: {
+                tags: ["<%= name %>"],
+                description: "Update <%= name %> by id",
+                notes: "Get <%= name %> id",
+                handler: <%= controller.name %>.update<%= controller.functionName %>,
+            }
+        },
+        {
+            method: "DELETE",
+            path: "/<%= name %>",
+            config: {
+                tags: ["<%= name %>"],
+                description: "Delete <%= name %> by id",
+                notes: "Get <%= name %> id",
+                handler: <%= controller.name %>.delete<%= controller.functionName %>,
+            }
+        }
+    ]);
+    cont();
+};
+
+exports.register.attributes = {
+    name: "<%= name %>-route",
+    version: "1.0"
+};
+        

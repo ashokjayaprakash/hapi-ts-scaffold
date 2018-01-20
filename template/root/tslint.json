@@ -1,0 +1,18 @@
+{
+    "extends": "tslint-microsoft-contrib",
+    "rules": {
+        "quotemark": [ true, "double" ],
+        "typedef": false,
+        "no-relative-imports":false,
+        "new-line-before-return":false,
+        "underscore-consistent-invocation": [true, { "style": "static" }],
+        "missing-jsdoc":false,
+        "object-literal-key-quotes":false,
+        "ordered-imports":false,
+        "no-default-export":false,
+        "no-trailing-whitespace": [true, "ignore-template-strings"],
+        "no-string-literal": false
+    }
+}
+
+

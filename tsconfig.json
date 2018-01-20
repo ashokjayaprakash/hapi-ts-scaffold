@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "declaration": true,
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "sourceMap": false,
+        "outDir": "build",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "types/*"
+            ]
+        }
+    },
+    "include": [
+        "lib/**/*",
+        "test/**/*"
+    ]
+}

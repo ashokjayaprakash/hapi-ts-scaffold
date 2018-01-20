@@ -1,0 +1,55 @@
+{
+  "name": "hapi-ts-scaffold",
+  "version": "2.0.3",
+  "description": "Hapi Typescript scaffold project ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashokjayaprakash/hapi-ts-scaffold.git"
+  },
+  "bin": {
+    "ht": "build/cli.js"
+  },
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "start": "node build/cli.js",
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "tsc:watch": "tsc --watch",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "test": "mocha -r ts-node/register ./test/*.ts"
+  },
+  "keywords": [
+    "hapi",
+    "scaffold",
+    "scaffold generator",
+    "ts",
+    "typescript",
+    "cli",
+    "project generator",
+    "project scaffold",
+    "typescript controller",
+    "model",
+    "hapi route generator",
+    "hapi typescript"
+  ],
+  "author": "Ashok JayaPrakash <ashokjp93@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/fs-extra": "^4.0.5",
+    "@types/joi": "^10.4.3",
+    "@types/node": "^8.0.31",
+    "@types/underscore": "^1.8.5",
+    "@types/underscore.string": "0.0.32",
+    "commander": "^2.12.2",
+    "fs-extra": "^4.0.3",
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
+  }
+}
