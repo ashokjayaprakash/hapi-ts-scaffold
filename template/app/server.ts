@@ -86,7 +86,7 @@ let plugin: any = [
     }
 ];
 
-plugin.concat(Route);
+plugin = plugin.concat(Route);
 
 const manifest = { 
     server: {
@@ -108,10 +108,10 @@ const composeOptions: Object = {
 
 Glue.compose(manifest, composeOptions, (err, server) => {
     server.start((serverStartError) => {
-        //console.info('Server running at: ' + server.info.uri);
+        console.info('Application running at: ' + server.info.uri);
         if (serverStartError) {
             //Add Logging
-            //console.error('Server running at: ' , serverStartError);
+            console.error('Server running at: ' , serverStartError);
         }
     });
 });

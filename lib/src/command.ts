@@ -104,14 +104,14 @@ function registerRoute(projectName: string, moduleName: string) {
 
 function buildRoutePlugin(name: string, data: string) {
     let parsedData: any = JSON.parse(data);
-    let controllerInfo  = getTemplateDetails(APP_CONSTANT.CONTROLLER, name);
+    let routeInfo  = getTemplateDetails(APP_CONSTANT.ROUTE, name);
     let plugin: any = {
         plugin: {
             register: ""
         }
     }
     
-    plugin.plugin.register = `./${PROJECT_DIR.MODULE}/${controllerInfo.name}/${controllerInfo.className}`
+    plugin.plugin.register = `./${PROJECT_DIR.MODULE}/${routeInfo.name}/${routeInfo.className}`
     parsedData.push(plugin);
     return JSON.stringify(parsedData, null, '  ');
 }

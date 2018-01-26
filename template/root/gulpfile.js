@@ -14,7 +14,7 @@ gulp.task('set-env', function() {
     gulpEnv({
         vars: {
             "DEPLOY_MODE": "development",
-            "PORT": "3044",
+            "PORT": "3000",
             "LOCATION_HOST": "",
             "APP_LOG_PATH": "/var/opt/logs/"
         }

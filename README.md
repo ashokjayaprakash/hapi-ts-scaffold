@@ -13,8 +13,16 @@
  * Entity creation for Model
  * Joi validation for API 
  * Swagger documentaion integration
- 
-Steps to kickstart with hapi typescript scaffold   
+
+### Contribution
+Possible ways to contribute this project
+* Raising issues 
+* Writing unit test cases
+* Developing Work in Progress items
+
+For any queries reach my email ashokjp93@gmail.com
+
+#### Steps to kickstart with hapi typescript scaffold   
 
 1.) Install hapi-ts-scaffold globally
 
@@ -32,6 +40,7 @@ ht create helloWorld
 ```javascript
 
 cd helloWorld
+
 // hapi-ts-scaffold -m <module-name>
 ht -m user
 ```
@@ -64,3 +73,9 @@ npm install
 ```javascript
 npm start
 ```
+6.) Application will be running on following port
+```javascript
+http://0.0.0.0:3000
+```
+
+

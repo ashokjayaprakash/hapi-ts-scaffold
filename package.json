@@ -1,6 +1,6 @@
 {
   "name": "hapi-ts-scaffold",
-  "version": "2.0.3",
+  "version": "0.0.1",
   "description": "Hapi Typescript scaffold project ",
   "repository": {
     "type": "git",
@@ -26,27 +26,29 @@
     "ts",
     "typescript",
     "cli",
+    "command line",
     "project generator",
     "project scaffold",
     "typescript controller",
     "model",
+    "api generator",
     "hapi route generator",
     "hapi typescript"
   ],
   "author": "Ashok JayaPrakash <ashokjp93@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "ts-node": "^3.3.0",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.3"
-  },
-  "dependencies": {
     "@types/commander": "^2.12.2",
     "@types/fs-extra": "^4.0.5",
     "@types/joi": "^10.4.3",
     "@types/node": "^8.0.31",
     "@types/underscore": "^1.8.5",
     "@types/underscore.string": "0.0.32",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  },
+  "dependencies": {
     "commander": "^2.12.2",
     "fs-extra": "^4.0.3",
     "underscore": "^1.8.3",
